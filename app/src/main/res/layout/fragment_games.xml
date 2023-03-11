@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gamesFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Акция скоро закончится"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="380dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:background="#1f1f1f"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ural2">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:text="Trip.com: Отели, рейсы, \nпоезда · Завершится 23.02.2022"
+                        android:textColor="#7e7e7e"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="@+id/image_view"
+                        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+                    <TextView
+                        android:id="@+id/textBottom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Скидки до 50% на перелеты классом \nэконом и до 60% классом бизнес | Ural..."
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@+id/textBottom"
+                        app:layout_constraintTop_toBottomOf="@+id/textBottom" />
+
+                    <Button
+                        android:id="@+id/buttonYz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="Узнать больше"
+                        android:textColor="#4CAF50" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="374dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Последние обновления"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="241dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignEnd="@+id/textView2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="новые функции и контент"
+                    android:textColor="#3C3C3C"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_forward" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/firstapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/secondapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/thirdapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/fourthapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/fifthapp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="374dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Рекомендации"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="45dp"
+                    android:layout_height="36dp"
+                    android:layout_alignBottom="@+id/textView22"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toEndOf="@+id/textView22"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_forward" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/firstapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/secondapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/thirdapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/fourthapp"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/fifthapp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
